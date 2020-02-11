@@ -13,7 +13,7 @@ object ParentDataFactory {
     }
 
     private fun randomChildren() : List<childModel>{
-        return ChildDataFactory.getChildren(1)
+        return ChildDataFactory.getChildren(Random.nextInt(1, 3))
     }
 
     fun getParents(count : Int) : List<parentModel>{

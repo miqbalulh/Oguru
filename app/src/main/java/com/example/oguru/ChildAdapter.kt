@@ -2,19 +2,25 @@ package com.example.oguru
 
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.inflate
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.children_recyclerview.view.*
+import java.util.zip.Inflater
 
 class ChildAdapter(private val children : List<childModel>)
     : RecyclerView.Adapter<ChildAdapter.ViewHolder>(){
 
+    val items: MutableList<String> = arrayListOf()
+
+
+
+
     override fun onCreateViewHolder(parent: ViewGroup,
                                     viewType: Int): ViewHolder {
 
-        val v =  LayoutInflater.from(parent.context)
-            .inflate(R.layout.children_recyclerview,parent,false)
+        val v =  LayoutInflater.from(parent.context).inflate(R.layout.children_recyclerview,parent,false)
         return ViewHolder(v)
     }
 
@@ -36,6 +42,7 @@ class ChildAdapter(private val children : List<childModel>)
         val textViewMapel : TextView = itemView.mapel
         val textViewJam : TextView = itemView.jam
         val textViewAlamat : TextView = itemView.alamat
-
     }
+
+
 }

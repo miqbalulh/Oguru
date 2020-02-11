@@ -5,12 +5,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.oguru.ParentAdapter
 import com.example.oguru.ParentDataFactory
 import com.example.oguru.R
+import com.example.oguru.parentModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.parent_recyclerview.*
@@ -34,14 +36,18 @@ class HomeFragment : Fragment() {
     }
 
     private fun initRecycler(view: View){
+
         recyclerView = view.findViewById(R.id.parentrv)
         val layoutManagerPlease = LinearLayoutManager(recyclerView.context,RecyclerView.VERTICAL,false)
-        layoutManagerPlease.initialPrefetchItemCount = 1
         recyclerView.apply {
             layoutManager = layoutManagerPlease
-            adapter = ParentAdapter(ParentDataFactory.getParents(1))
+            adapter = ParentAdapter(ParentDataFactory.getParents(10))
+
         }
 
+
     }
+
+
 
 }
