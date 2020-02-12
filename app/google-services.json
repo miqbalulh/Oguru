@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "621813748952",
+    "firebase_url": "https://oguru-e45df.firebaseio.com",
+    "project_id": "oguru-e45df",
+    "storage_bucket": "oguru-e45df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621813748952:android:6603a6290fef378a46b3ad",
+        "android_client_info": {
+          "package_name": "com.example.oguru"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621813748952-jof4jtkp23hopn0g1pmh8uh5arirku7q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.oguru",
+            "certificate_hash": "d514716274393f9a69157dd8210389ee1c6eb631"
+          }
+        },
+        {
+          "client_id": "621813748952-h6l4b3665vor6srlv3vm42lsv5opekkr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw-CVlyV6pkMOdIakPhQLeaEIgTGeFKiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "621813748952-h6l4b3665vor6srlv3vm42lsv5opekkr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
